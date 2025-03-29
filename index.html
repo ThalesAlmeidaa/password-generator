@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Password Generator | Thales Almeida</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-imagem">
+        <img class="imagem" src="./img/cadeado.png" alt="cadeado" />
+        <img class="imagem-click" width="35" height="35" src="https://img.icons8.com/ios/50/nui2.png" alt="nui2"/>
+      </div>
+
+      <div class="container-items">
+        <h1>Password <span>Generator</span></h1>
+
+        <div class="item">
+          <input type="number" id="size" name="size" />
+          <label for="size">Number of characteres</label>
+        </div>
+
+        <div class="item">
+          <input type="checkbox" id="include-uppercase" name="include-uppercase" />
+          <label for="include-uppercase">Include Uppercase</label>
+        </div>
+
+        <div class="item">
+          <input type="checkbox" id="include-lowercase" name="include-lowercase" />
+          <label for="include-lowercase">Include Lowercase</label>
+        </div>
+
+        <div class="item">
+          <input type="checkbox" id="include-number" name="include-number" />
+          <label for="include-number">Include Number</label>
+        </div>
+
+        <div class="item">
+          <input type="checkbox" id="include-special-character" name="letra-maiuscula" />
+          <label for="include-special-character">Include Special Character</label>
+        </div>
+
+        <div class="password-container">
+          <span class="password"></span>
+          <button class="copy"><i class="fa-solid fa-copy"></i></button>
+        </div>
+
+        <button class="generate">Generate Password</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
