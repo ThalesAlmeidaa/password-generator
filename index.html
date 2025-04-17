@@ -18,7 +18,7 @@
         <h1>Password <span>Generator</span></h1>
 
         <div class="item">
-          <input type="number" id="size" name="size" />
+          <input type="number" id="size" name="size" min="1" />
           <label for="size">Number of characteres</label>
         </div>
 
@@ -43,11 +43,11 @@
         </div>
 
         <div class="password-container">
-          <span class="password"></span>
+          <span class="password" id="password-output"></span>
           <button class="copy"><i class="fa-solid fa-copy"></i></button>
         </div>
 
-        <button class="generate">Generate Password</button>
+        <button class="generate" id="generate-btn">Generate Password</button>
       </div>
     </div>
 
