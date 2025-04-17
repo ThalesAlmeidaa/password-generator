@@ -4,6 +4,7 @@ function animarDivs() {
 
 document.querySelector('.container-imagem').addEventListener('click', animarDivs);
 
+// CÓDIGO PARA GERAR A SENHA
 const passwordLengthInput = document.getElementById("size");
 const includeUppercase = document.getElementById("include-uppercase");
 const includeLowercase = document.getElementById("include-lowercase");
